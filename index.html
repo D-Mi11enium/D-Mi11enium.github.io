@@ -4,111 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Develop this world</title>
-    <style>
-      .social-icon {
-        cursor: pointer;
-        position: fixed;
-        transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
-        z-index: 100000 !important;
-      }
-
-      #instagramIcon {
-        left: 0px;
-        top: 420px;
-        background-color: rgba(219, 203, 239, 0.4);
-        border-radius: 0% 0% 0% 0%;
-        padding: 20px 20px 20px 20px;
-        margin-bottom: 10px;
-      }
-
-      @media (max-width: 980px) {
-        #instagramIcon {
-          background-color: rgba(180, 29, 141, 0.05);
-        }
-      }
-
-      #telegramIcon {
-        left: 0px;
-        top: 350px;
-        background-color: rgba(219, 203, 239, 0.4);
-        border-radius: 0% 30% 0% 0%;
-        padding: 20px 20px 20px 20px;
-        margin-bottom: 10px;
-      }
-
-      @media (max-width: 980px) {
-        #telegramIcon {
-          background-color: rgba(180, 29, 141, 0.05);
-        }
-      }
-
-      #whatsappIcon {
-        left: 0px;
-        top: 490px;
-        background-color: rgba(219, 203, 239, 0.4);
-        border-radius: 0% 0% 30% 0%;
-        padding: 20px;
-        margin-bottom: 10px;
-      }
-
-      @media (max-width: 980px) {
-        #whatsappIcon {
-          background-color: rgba(180, 29, 141, 0.05);
-        }
-      }
-
-      #instagramIcon a,
-      #telegramIcon a,
-      #whatsappIcon a {
-        display: block;
-        width: 100%;
-        height: 100%;
-      }
-
-      #instagramIcon svg,
-      #telegramIcon svg,
-      #whatsappIcon svg {
-        fill: #083d77;
-        transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
-      }
-
-      #instagramIcon:hover,
-      #telegramIcon:hover,
-      #whatsappIcon:hover {
-        transform: scale(1);
-        background-color: rgba(255, 255, 255, 0.4);
-      }
-
-      #instagramIcon:hover svg,
-      #telegramIcon:hover svg,
-      #whatsappIcon:hover svg {
-        filter: brightness(2.5);
-        transform: scale(1.5);
-      }
-      canvas {
-        display: block;
-        background-image: url(https://previews.dropbox.com/p/thumb/ACMc6jmjzg3q5UVP3WBQpzxdGil27OGziIFb3YIYwVIcuYYhr0pKSdjMjNc2gRRYzTFF4YbdQAcZHygs7jyEwtybPMGWylplKBQlzewNMA7ZM9M3BXTsaEhURnv-sqSi_pgW9GJ3QXLpsoyJe_-E4-J_usI2jXXch1Stj5-FDnruEd1bewF5c2OwmWL0OfO3AsCgYDosW_E4XiiD8rshzs_FS44w763yIZeE_HNQh6VTQfNgGmq8-wR0PahfCu1AaT8H0ykzI505I9EfOIhNacDpvrq9r7c8Vk7tOHZgg3vun4Blyz3yZ67jN_gscJl-ocfJWtMksqbPAhEMSfqTcZjK/p.jpeg);
-        background-size: cover;
-        width: 100%;
-        height: 100%;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="stylenamed.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
   </head>
-  <body>
-    <canvas id="spidersCanvas"></canvas>
+  <body style="background-color: rgb(138, 43, 226)">
+    <div class="maintext">
+      <div class="glitch_a" data-text="Димка дизайнер">Димка дизайнер</div>
+      <div class="glitch_a" data-text="Хочет тобы вы его наняли">
+        Хочет тобы вы его наняли
+      </div>
+    </div>
+    <div><canvas id="spidersCanvas"></canvas></div>
     <div
       class="social-icon"
       id="instagramIcon"
       onclick="openInstagramProfile()"
     >
       <a
-        href="https://www.instagram.com/ktg_preschool/"
+        href="https://www.instagram.com/d_mi11enium/"
         target="_blank"
         rel="nofollow noopener"
-        aria-label="ktg_preschool"
-        title="ktg_preschool"
+        aria-label="Didital Designer"
+        title="Didital Designer"
       >
         <svg
           class="t-sociallinks__svg"
@@ -133,11 +52,11 @@
 
     <div class="social-icon" id="telegramIcon" onclick="openTelegramCh()">
       <a
-        href="https://t.me/+Tvw_V3IkL9G1AEyO"
+        href="https://t.me/d_mi11enium"
         target="_blank"
         rel="nofollow noopener"
-        aria-label="KTG"
-        title="KTG"
+        aria-label="Didital Designer"
+        title="Didital Designer"
       >
         <svg
           class="t-sociallinks__svg"
@@ -158,11 +77,11 @@
 
     <div class="social-icon" id="whatsappIcon" onclick="openWhatsApp()">
       <a
-        href="link_to_WhatsApp"
+        href="https://wa.me/992552340030"
         target="_blank"
         rel="nofollow noopener"
-        aria-label="WhatsApp"
-        title="WhatsApp"
+        aria-label="Didital Designer"
+        title="Didital Designer"
       >
         <svg
           class="t-sociallinks__svg"
