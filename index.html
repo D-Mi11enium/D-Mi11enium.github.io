@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="stylenamed.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <script defer="canvas" src="canvas.js"></script>
+    <script defer="social-icon" src="sl.js"></script>
   </head>
-  <body style="background-color: rgb(138, 43, 226)">
+  <body style="background-color: rgb(8, 2, 22)">
     <div class="maintext">
       <div class="glitch_a" data-text="Димка дизайнер">Димка дизайнер</div>
       <div class="glitch_a" data-text="Хочет тобы вы его наняли">
@@ -40,11 +42,11 @@
         >
           <path
             d="M66.9644 10H33.04C20.3227 10 10 20.3227 10 32.9573V67.1167C10 79.6816 20.3227 90 33.04 90H66.96C79.6816 90 90 79.6816 90 67.0384V32.9616C90.0044 20.3227 79.6816 10 66.9644 10ZM29.2 50.0022C29.2 38.5083 38.5257 29.2 50.0022 29.2C61.4786 29.2 70.8 38.5083 70.8 50.0022C70.8 61.4961 61.4743 70.8 50.0022 70.8C38.5257 70.8 29.2 61.4961 29.2 50.0022ZM72.8854 31.2027C70.2079 31.2027 68.0789 29.0824 68.0789 26.4049C68.0789 23.7273 70.2035 21.6027 72.8854 21.6027C75.5586 21.6027 77.6833 23.7273 77.6833 26.4049C77.6833 29.0824 75.5586 31.2027 72.8854 31.2027Z"
-            fill="#b41d8d"
+            fill="#080216"
           ></path>
           <path
             d="M50.0022 36.4011C42.4659 36.4011 36.4011 42.4876 36.4011 50.0022C36.4011 57.5124 42.4659 63.6033 50.0022 63.6033C57.5429 63.6033 63.6033 57.5124 63.6033 50.0022C63.6033 42.492 57.4514 36.4011 50.0022 36.4011Z"
-            fill="#b41d8d"
+            fill="#080216"
           ></path>
         </svg>
       </a>
@@ -69,7 +71,7 @@
         >
           <path
             d="M83.1797 17.5886C83.1797 17.5886 90.5802 14.7028 89.9635 21.711C89.758 24.5968 87.9079 34.6968 86.4688 45.6214L81.5351 77.9827C81.5351 77.9827 81.124 82.7235 77.4237 83.548C73.7233 84.3724 68.173 80.6623 67.145 79.8378C66.3227 79.2195 51.7273 69.9438 46.5878 65.4092C45.1488 64.1724 43.5042 61.6989 46.7934 58.8132L68.3785 38.201C70.8454 35.7274 73.3122 29.956 63.0336 36.9642L34.2535 56.5459C34.2535 56.5459 30.9644 58.6071 24.7973 56.752L11.4351 52.6295C11.4351 52.6295 6.50135 49.5377 14.9298 46.4457C35.4871 36.7579 60.7724 26.864 83.1797 17.5886Z"
-            fill="#b41d8d"
+            fill="#080216"
           ></path>
         </svg>
       </a>
@@ -96,212 +98,10 @@
             fill-rule="evenodd"
             clip-rule="evenodd"
             d="M50.168 10C60.8239 10.004 70.8257 14.1522 78.346 21.6819C85.8676 29.2114 90.0066 39.2185 90 49.8636C89.9906 71.8252 72.1203 89.6956 50.1668 89.6956H50.1508C43.4852 89.6929 36.9338 88.0208 31.1162 84.8468L10 90.3853L15.6516 69.7437C12.1665 63.7042 10.3323 56.851 10.3349 49.8304C10.343 27.8676 28.2134 10 50.168 10V10ZM61.5376 54.7631C62.4507 55.0954 67.3433 57.5023 68.3389 58.0009C68.5313 58.0971 68.7113 58.1842 68.8784 58.265C69.5753 58.602 70.0458 58.8296 70.2462 59.1651C70.4947 59.5799 70.4947 61.5736 69.6654 63.8982C68.8359 66.2229 64.8605 68.3442 62.9478 68.63C61.2319 68.8865 59.0627 68.9928 56.6782 68.2353C55.2322 67.7767 53.3794 67.1653 51.0041 66.1392C41.6698 62.1082 35.3628 53.06 34.1747 51.3556C34.0919 51.2368 34.0341 51.1538 34.0017 51.1106L33.9981 51.1056C33.486 50.4243 29.9372 45.7022 29.9372 40.8149C29.9372 36.2325 32.1873 33.8303 33.2244 32.7232C33.2961 32.6467 33.3619 32.5763 33.4208 32.5118C34.3341 31.5149 35.412 31.2664 36.0751 31.2664C36.7385 31.2664 37.4029 31.2717 37.9826 31.301C38.0541 31.3046 38.1286 31.304 38.2056 31.3037C38.786 31.3001 39.5087 31.2957 40.2221 33.0089C40.4976 33.6707 40.9012 34.653 41.3265 35.6882C42.1818 37.7702 43.1251 40.066 43.2912 40.399C43.5397 40.8974 43.7058 41.4782 43.3736 42.1427C43.323 42.2436 43.2763 42.3387 43.2318 42.4295C42.9831 42.9364 42.7995 43.3104 42.378 43.8029C42.2125 43.9963 42.0413 44.2045 41.8703 44.4131C41.5273 44.8309 41.1842 45.2488 40.8853 45.5467C40.387 46.0425 39.8686 46.5808 40.4493 47.5777C41.0303 48.5731 43.028 51.8323 45.9867 54.472C49.1661 57.3091 51.93 58.5078 53.3318 59.1157C53.6058 59.2346 53.8279 59.3308 53.9907 59.4124C54.9849 59.9109 55.5658 59.8284 56.1465 59.1637C56.7274 58.4993 58.6347 56.2583 59.298 55.2615C59.9612 54.2646 60.6259 54.4307 61.5376 54.7631V54.7631Z"
-            fill="#b41d8d"
+            fill="#080216"
           ></path>
         </svg>
       </a>
     </div>
-
-    <script>
-      function openInstagramProfile() {
-        var instagramProfileLink = "https://www.instagram.com/d_mi11enium/";
-        window.open(instagramProfileLink, "_blank");
-      }
-
-      function openTelegramCh() {
-        var telegramChatLink = "https://t.me/d_mi11enium";
-        window.open(telegramChatLink, "_blank");
-      }
-
-      function openWhatsApp() {
-        var whatsAppLink = "https://wa.me/992552340030";
-        window.open(whatsAppLink, "_blank");
-      }
-    </script>
-    <script>
-      const canvas = document.getElementById("spidersCanvas");
-      const ctx = canvas.getContext("2d");
-
-      const points = [];
-      const position = { x: 0, y: 0 };
-
-      const hsvToRgb = (h, s, v) => {
-        let r, g, b;
-        const i = Math.floor(h * 6);
-        const f = h * 6 - i;
-        const p = v * (1 - s);
-        const q = v * (1 - f * s);
-        const t = v * (1 - (1 - f) * s);
-        switch (i % 6) {
-          case 0:
-            r = v;
-            g = t;
-            b = p;
-            break;
-          case 1:
-            r = q;
-            g = v;
-            b = p;
-            break;
-          case 2:
-            r = p;
-            g = v;
-            b = t;
-            break;
-          case 3:
-            r = p;
-            g = q;
-            b = v;
-            break;
-          case 4:
-            r = t;
-            g = p;
-            b = v;
-            break;
-          case 5:
-            r = v;
-            g = p;
-            b = q;
-            break;
-        }
-        return [Math.round(r * 255), Math.round(g * 255), Math.round(b * 255)];
-      };
-
-      const changeColor = (point) => {
-        gsap.to(point, {
-          colorHue: "+=0.05",
-          duration: 1,
-          repeat: -1,
-          modifiers: {
-            colorHue: (hue) => (parseFloat(hue) % 1).toFixed(2),
-          },
-        });
-      };
-
-      const updateSize = () => {
-        const { width, height } = canvas.getBoundingClientRect();
-        canvas.width = width;
-        canvas.height = height;
-      };
-
-      const createPoints = () => {
-        const { width, height } = canvas;
-        const noiseFactor = Math.min(width / 50, 30);
-        points.length = 0;
-
-        for (let x = 0; x < width; x += width / noiseFactor) {
-          for (let y = 0; y < height; y += height / noiseFactor) {
-            const px = x + (Math.random() * width) / noiseFactor;
-            const py = y + (Math.random() * height) / noiseFactor;
-            points.push({
-              x: px,
-              originX: px,
-              y: py,
-              originY: py,
-              colorHue: Math.random(),
-              closest: [],
-            });
-          }
-        }
-
-        points.forEach((p1) => {
-          const closest = [];
-          points.forEach((p2) => {
-            if (p1 !== p2) {
-              const distance = getDistance(p1, p2);
-              if (closest.length < 5) {
-                closest.push(p2);
-              } else {
-                const farthest = _.maxBy(closest, (p) => getDistance(p1, p));
-                if (distance < getDistance(p1, farthest)) {
-                  _.pull(closest, farthest);
-                  closest.push(p2);
-                }
-              }
-            }
-          });
-          p1.closest = closest;
-        });
-
-        points.forEach((point) => {
-          changeColor(point);
-          point.circle = new Circle(
-            ctx,
-            point,
-            2 + Math.random() * 2,
-            `rgba(255,255,255,0.3)`
-          );
-          shiftPoint(point);
-        });
-      };
-
-      const Circle = function (ctx, point, radius, color) {
-        this.ctx = ctx;
-        this.point = point;
-        this.radius = radius;
-        this.color = color;
-        this.draw = () => {
-          ctx.beginPath();
-          ctx.arc(point.x, point.y, radius, 0, Math.PI * 2, false);
-          ctx.fillStyle = this.color;
-          ctx.fill();
-        };
-      };
-
-      const getDistance = (p1, p2) => {
-        return Math.sqrt(Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2));
-      };
-
-      const drawLines = (point) => {
-        if (point.opacity > 0) {
-          ctx.strokeStyle = `rgba(255,255,255,${point.opacity})`;
-          ctx.lineWidth = 0.5;
-          point.closest.forEach((cp) => {
-            ctx.beginPath();
-            ctx.moveTo(point.x, point.y);
-            ctx.lineTo(cp.x, cp.y);
-            ctx.stroke();
-          });
-        }
-      };
-
-      const shiftPoint = (point) => {
-        const duration = 0.3 + Math.random() * 1;
-        const x = point.originX - 50 + Math.random() * 100;
-        const y = point.originY - 50 + Math.random() * 100;
-        gsap.to(point, { x, y, duration, onComplete: () => shiftPoint(point) });
-      };
-
-      const animate = () => {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        const radius = 300; // Радиус вокруг курсора, в котором точки видны
-        points.forEach((point) => {
-          const distance = getDistance(position, point);
-          if (distance < radius) {
-            point.opacity = (1 - distance / radius) * 0.8; // Прозрачность в зависимости от расстояния
-          } else {
-            point.opacity = 0; // Невидимые точки за пределами радиуса
-          }
-
-          const [r, g, b] = hsvToRgb(point.colorHue, 0.8, 1); // Преобразование в RGB
-          point.circle.color = `rgba(${r},${g},${b},${point.opacity})`; // Устанавливаем цвет в зависимости от прозрачности
-
-          drawLines(point);
-          point.circle.draw();
-        });
-        requestAnimationFrame(animate);
-      };
-
-      window.addEventListener("mousemove", (e) => {
-        position.x = e.clientX;
-        position.y = e.clientY;
-      });
-
-      window.addEventListener("resize", updateSize);
-
-      updateSize();
-      createPoints();
-      animate();
-    </script>
   </body>
 </html>
