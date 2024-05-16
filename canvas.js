@@ -176,6 +176,12 @@ window.addEventListener("mousemove", (e) => {
   position.y = e.clientY;
 });
 
+window.addEventListener("touchmove", (e) => {
+  const touch = e.touches[0];
+  position.x = touch.clientX;
+  position.y = touch.clientY;
+});
+
 window.addEventListener("resize", updateSize);
 
 updateSize();
