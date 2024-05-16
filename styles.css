@@ -5,6 +5,19 @@ body {
   background-color: rgb(8, 2, 22, 0.5);
   margin: 0px;
 }
+
+#spiderCanvas {
+  width: 100vw;
+  height: 100vh;
+}
+
+@media (max-width: 600px) {
+  #spiderCanvas {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
 .social-icon {
   cursor: pointer;
   position: fixed;

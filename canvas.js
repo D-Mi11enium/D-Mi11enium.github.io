@@ -153,7 +153,7 @@ const shiftPoint = (point) => {
 
 const animate = () => {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  const radius = 300; // Радиус вокруг курсора, в котором точки видны
+  const radius = Math.min(canvas.width, 300); // Радиус вокруг курсора, в котором точки видны
   points.forEach((point) => {
     const distance = getDistance(position, point);
     if (distance < radius) {
