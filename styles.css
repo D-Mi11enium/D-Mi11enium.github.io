@@ -2,7 +2,7 @@
   cursor: pointer;
   position: fixed;
   transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
-  z-index: 100000 !important;
+  z-index: 10;
 }
 
 #instagramIcon {
@@ -14,9 +14,10 @@
   margin-bottom: 10px;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1140px) {
   #instagramIcon {
-    background-color: rgba(180, 29, 141, 0.05);
+    background-color: rgba(231, 229, 231, 0.5);
+    top: 630px;
   }
 }
 
@@ -29,9 +30,10 @@
   margin-bottom: 10px;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1140px) {
   #telegramIcon {
-    background-color: rgba(180, 29, 141, 0.05);
+    background-color: rgba(231, 229, 231, 0.5);
+    top: 560px;
   }
 }
 
@@ -44,9 +46,10 @@
   margin-bottom: 10px;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1140px) {
   #whatsappIcon {
-    background-color: rgba(180, 29, 141, 0.05);
+    background-color: rgba(231, 229, 231, 0.5);
+    top: 700px;
   }
 }
 
@@ -80,8 +83,12 @@
 }
 canvas {
   display: block;
-  background-image: url(https://previews.dropbox.com/p/thumb/ACMc6jmjzg3q5UVP3WBQpzxdGil27OGziIFb3YIYwVIcuYYhr0pKSdjMjNc2gRRYzTFF4YbdQAcZHygs7jyEwtybPMGWylplKBQlzewNMA7ZM9M3BXTsaEhURnv-sqSi_pgW9GJ3QXLpsoyJe_-E4-J_usI2jXXch1Stj5-FDnruEd1bewF5c2OwmWL0OfO3AsCgYDosW_E4XiiD8rshzs_FS44w763yIZeE_HNQh6VTQfNgGmq8-wR0PahfCu1AaT8H0ykzI505I9EfOIhNacDpvrq9r7c8Vk7tOHZgg3vun4Blyz3yZ67jN_gscJl-ocfJWtMksqbPAhEMSfqTcZjK/p.jpeg);
   background-size: cover;
   width: 100%;
   height: 100%;
 }
+
+/* @media (max-width: 980px;) {
+  #canvas {
+  }
+} */

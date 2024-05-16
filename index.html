@@ -11,14 +11,16 @@
     <script defer="canvas" src="canvas.js"></script>
     <script defer="social-icon" src="sl.js"></script>
   </head>
-  <body style="background-color: rgb(8, 2, 22)">
+  <body style="background-color: rgb(8, 2, 22); overflow: hidden">
     <div class="maintext">
       <div class="glitch_a" data-text="Димка дизайнер">Димка дизайнер</div>
-      <div class="glitch_a" data-text="Хочет тобы вы его наняли">
+      <div class="glitch_b" data-text="Хочет тобы вы его наняли">
         Хочет тобы вы его наняли
       </div>
     </div>
-    <div><canvas id="spidersCanvas"></canvas></div>
+    <div style="width: 100vw; height: 100vh; overflow: hidden">
+      <canvas id="spidersCanvas"></canvas>
+    </div>
     <div
       class="social-icon"
       id="instagramIcon"
