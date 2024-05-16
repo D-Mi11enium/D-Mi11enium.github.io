@@ -1,3 +1,10 @@
+body {
+  display: block;
+  overflow: hidden;
+  /* background: url(Desktop_main.png); */
+  background-color: rgb(8, 2, 22, 0.5);
+  margin: 0px;
+}
 .social-icon {
   cursor: pointer;
   position: fixed;
