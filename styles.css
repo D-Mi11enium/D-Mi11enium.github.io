@@ -24,7 +24,6 @@ body {
     position: fixed;
   }
 } */
-
 .social-icon {
   cursor: pointer;
   position: fixed;
@@ -332,5 +331,23 @@ canvas {
   .portfolio-item3 .description {
     padding-left: 45px;
     width: 100%;
+  }
+  .s_icons {
+    display: flex;
+    justify-content: center;
+  }
+  .social-icon {
+    position: static;
+  }
+  #instagramIcon {
+    border-radius: 0% 0% 0% 20%;
+  }
+
+  #telegramIcon {
+    border-radius: 0% 0% 0% 0%;
+  }
+
+  #whatsappIcon {
+    border-radius: 0% 0% 20% 0%;
   }
 }
