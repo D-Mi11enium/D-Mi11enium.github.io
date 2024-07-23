@@ -136,6 +136,7 @@ canvas {
 .portfolio {
   display: grid;
   background: transparent;
+  font-family: "Rubik Moonrocks", sans-serif;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
@@ -164,9 +165,11 @@ canvas {
 .portfolio-item .description h3 {
   margin: 0;
   font-size: 1.5em;
+  color: #fff;
 }
 
 .portfolio-item .description p {
   margin: 10px 0 0;
+  font-size: 1em;
   color: #666;
 }
