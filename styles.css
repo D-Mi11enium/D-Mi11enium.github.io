@@ -197,7 +197,7 @@ canvas {
   font-size: 1em;
   font-weight: 300;
   font-weight: lighter;
-  color: #666;
+  color: #fff;
 }
 
 .border-animation {
@@ -260,7 +260,7 @@ canvas {
   font-size: 1em;
   font-weight: 300;
   font-weight: lighter;
-  color: #666;
+  color: #fff;
 }
 
 .portfolio-item3 {
@@ -302,7 +302,7 @@ canvas {
   font-size: 1em;
   font-weight: 300;
   font-weight: lighter;
-  color: #666;
+  color: #fff;
 }
 @media (max-width: 980px) {
   .title1 h2,
