@@ -12,6 +12,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  width: 100vw;
+  height: 100vh;
   z-index: -1;
 }
 
@@ -106,24 +108,36 @@ body {
   filter: brightness(2.5);
   transform: scale(1.5);
 }
+.blocks {
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+}
 canvas {
+  position: fixed;
   display: block;
   background-size: cover;
   width: 100%;
   height: 100%;
+  z-index: -1;
 }
 
-/* @media (max-width: 980px;) {
-  #canvas {
+@media (max-width: 980px) {
+  .blocks {
+    padding: 10px;
+    padding-bottom: 60px;
   }
-} */
+  .portfolio {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 
 .portfolio {
   display: grid;
   background: transparent;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
-  padding: 20px;
 }
 
 .portfolio-item {
