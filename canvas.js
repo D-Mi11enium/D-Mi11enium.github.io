@@ -2,7 +2,7 @@ const canvas = document.getElementById("spidersCanvas");
 const ctx = canvas.getContext("2d");
 
 const points = [];
-const position = { x: 0, y: 0 };
+const position = { x: canvas.width / 2, y: canvas.height / 2 }; // Начальная позиция в центре
 
 const hsvToRgb = (h, s, v) => {
   let r, g, b;
@@ -58,9 +58,10 @@ const changeColor = (point) => {
 };
 
 const updateSize = () => {
-  const { width, height } = canvas.getBoundingClientRect();
-  canvas.width = width;
-  canvas.height = height;
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  position.x = canvas.width / 2; // Центрируем курсор
+  position.y = canvas.height / 2;
 };
 
 const createPoints = () => {
@@ -70,15 +71,16 @@ const createPoints = () => {
 
   for (let x = 0; x < width; x += width / noiseFactor) {
     for (let y = 0; y < height; y += height / noiseFactor) {
-      const px = x + (Math.random() * width) / noiseFactor;
-      const py = y + (Math.random() * height) / noiseFactor;
+      const px = x + (Math.random() * width) / noiseFactor - width / 2; // Центрируем точки
+      const py = y + (Math.random() * height) / noiseFactor - height / 2;
       points.push({
-        x: px,
-        originX: px,
-        y: py,
-        originY: py,
+        x: width / 2 + px, // Переносим точки в центр
+        originX: width / 2 + px,
+        y: height / 2 + py, // Переносим точки в центр
+        originY: height / 2 + py,
         colorHue: Math.random(),
         closest: [],
+        opacity: 1,
       });
     }
   }

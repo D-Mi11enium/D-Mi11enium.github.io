@@ -1,22 +1,27 @@
 body {
-  display: block;
+  margin: 0;
+  padding: 0;
+  /* display: block; */
   overflow: auto;
+  height: 100%;
   /* background: url(Desktop_main.png); */
-  background-color: rgb(8, 2, 22, 0.5);
-  margin: 0px;
+  background-color: rgba(25, 4, 75, 0.5);
 }
 
 #spiderCanvas {
-  width: 100vw;
-  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   #spiderCanvas {
     width: 100vw;
     height: 100vh;
+    position: fixed;
   }
-}
+} */
 
 .social-icon {
   cursor: pointer;
@@ -115,6 +120,7 @@ canvas {
 
 .portfolio {
   display: grid;
+  background: transparent;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   padding: 20px;
@@ -123,7 +129,7 @@ canvas {
 .portfolio-item {
   border: 1px solid #ccc;
   border-radius: 12px;
-  overflow: hidden;
+  overflow: auto;
   transition: transform 0.3s ease;
 }
 
