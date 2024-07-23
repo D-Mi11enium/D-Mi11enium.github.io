@@ -132,20 +132,42 @@ canvas {
     padding-right: 10px;
   }
 }
+.title1 {
+  padding-bottom: 1.5%;
+}
+.title1 h2 {
+  font-family: "Comfortaa", sans-serif;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fff;
+}
 
+.title2 {
+  padding-top: 3%;
+  padding-bottom: 1.5%;
+}
+.title2 h2 {
+  font-family: "Comfortaa", sans-serif;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fff;
+}
 .portfolio {
   display: grid;
   background: transparent;
-  font-family: "Rubik Moonrocks", sans-serif;
+  font-family: "Comfortaa", sans-serif;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+  padding-top: 1.5%;
 }
 
 .portfolio-item {
-  border: 1px solid #ccc;
-  border-radius: 12px;
+  /* border: 2px solid #ccc; */
+  /* border-radius: 12px; */
+
   overflow: auto;
   transition: transform 0.3s ease;
+  backdrop-filter: blur(4px);
 }
 
 .portfolio-item img {
@@ -159,17 +181,156 @@ canvas {
 
 .portfolio-item .description {
   padding: 15px;
-  text-align: center;
+  text-align: left;
 }
 
 .portfolio-item .description h3 {
   margin: 0;
+  height: 85px;
   font-size: 1.5em;
+  font-weight: 500;
   color: #fff;
 }
 
 .portfolio-item .description p {
   margin: 10px 0 0;
   font-size: 1em;
+  font-weight: 300;
+  font-weight: lighter;
   color: #666;
+}
+
+.border-animation {
+  border: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(45deg, red, yellow, green, blue);
+  animation: border-anim 4s infinite linear;
+}
+
+@keyframes border-anim {
+  0% {
+    border-image-source: linear-gradient(45deg, red, yellow, green, blue);
+  }
+  25% {
+    border-image-source: linear-gradient(45deg, yellow, green, blue, red);
+  }
+  50% {
+    border-image-source: linear-gradient(45deg, green, blue, red, yellow);
+  }
+  75% {
+    border-image-source: linear-gradient(45deg, blue, red, yellow, green);
+  }
+  100% {
+    border-image-source: linear-gradient(45deg, red, yellow, green, blue);
+  }
+}
+
+.portfolio-item2 {
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  overflow: auto;
+  transition: transform 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.portfolio-item2 img {
+  width: 100%;
+  height: auto;
+}
+
+.portfolio-item2:hover {
+  transform: scale(1.05);
+}
+
+.portfolio-item2 .description {
+  padding: 15px;
+  text-align: left;
+}
+
+.portfolio-item2 .description h3 {
+  margin: 0;
+  height: 85px;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #fff;
+}
+
+.portfolio-item2 .description p {
+  margin: 10px 0 0;
+  font-size: 1em;
+  font-weight: 300;
+  font-weight: lighter;
+  color: #666;
+}
+
+.portfolio-item3 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  overflow: auto;
+  transition: transform 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.portfolio-item3 img {
+  width: 50%;
+  height: auto;
+}
+
+/* .portfolio-item3:hover {
+  transform: scale(1.05);
+} */
+
+.portfolio-item3 .description {
+  width: 50%;
+  padding: 15px;
+  text-align: left;
+}
+
+.portfolio-item3 .description h3 {
+  margin: 0;
+  height: 85px;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #fff;
+}
+
+.portfolio-item3 .description p {
+  margin: 10px 0 0;
+  font-size: 1em;
+  font-weight: 300;
+  font-weight: lighter;
+  color: #666;
+}
+@media (max-width: 980px) {
+  .title1 h2,
+  .title2 h2 {
+    font-size: 1.5rem;
+  }
+  .portfolio-item .description h3,
+  .portfolio-item2 .description h3,
+  .portfolio-item3 .description h3 {
+    font-size: 1em;
+    height: auto;
+  }
+
+  .portfolio-item .description p,
+  .portfolio-item2 .description p,
+  .portfolio-item3 .description p {
+    font-size: 0.5em;
+  }
+}
+@media (max-width: 980px) {
+  .portfolio-item3 {
+    flex-direction: column;
+  }
+  .portfolio-item3 img {
+    width: 100%;
+  }
+  .portfolio-item3 .description {
+    padding-left: 45px;
+    width: 100%;
+  }
 }
