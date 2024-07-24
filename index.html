@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Develop this world</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="stylenamed.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
@@ -12,6 +18,7 @@
     <script defer="social-icon" src="sl.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
     <script src="smooth.js"></script>
+    <script defer="popup" src="popup.js"></script>
     <script src="//code.jivo.ru/widget/XAS6XZdAUk" async></script>
   </head>
   <body>
@@ -113,15 +120,48 @@
         <h2>Вот его реализованные коммерческие проекты</h2>
       </div>
       <div class="portfolio">
-        <div class="portfolio-item border-animation">
+        <div class="portfolio-item border-animation trigger">
           <img src="Group 52.jpg" alt="Work 1" />
           <div class="description">
             <h3>Дизайн сайта салона оптики</h3>
             <p>
-              Минималистичный дизайн для салона-сагазина оптики, многостраничник
+              Минималистичный дизайн для салона-сагазина оптики,
+              многостраничник. Разработан на WordPress
             </p>
           </div>
         </div>
+        <div class="popup">
+          <div class="imgpres">
+            <img
+              src="Group 52.jpg"
+              alt="pres1"
+              style="width: inherit; max-width: 100%"
+            />
+            <h2>Дизайн сайта салона оптики</h2>
+            <img
+              src="image 1.png"
+              alt="pres2"
+              style="width: inherit; max-width: 100%"
+            />
+          </div>
+
+          <p>
+            Минималистичный дизайн для салона-сагазина оптики, многостраничник.
+            Разрабатывался мной в Фигме. Реализован на WordPress, реализация
+            стороннего начинающего специалиста.
+          </p>
+          <div class="btnclspp">
+            <a
+              href="http://arts-optika.ru/"
+              target="_blank"
+              class="btn btn-primary"
+            >
+              А че там за сайт...
+            </a>
+            <button class="btn btn-dark close">Класс! Давай дальше</button>
+          </div>
+        </div>
+        <div class="overlay"></div>
         <div class="portfolio-item border-animation">
           <img src="Group 53.jpg" alt="Work 2" />
           <div class="description">

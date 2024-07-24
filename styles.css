@@ -5,7 +5,74 @@ body {
   overflow: auto;
   height: 100%;
   /* background: url(Desktop_main.png); */
-  background-color: rgba(25, 4, 75, 0.5);
+  background-color: rgb(11, 2, 32);
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #083d77;
+  background-image: -webkit-linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.25) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.25) 50%,
+    rgba(255, 255, 255, 0.25) 75%,
+    transparent 75%,
+    transparent
+  );
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 12px 12px 12px 12px;
+  background-color: #f95738;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.25) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.25) 50%,
+    rgba(255, 255, 255, 0.25) 75%,
+    transparent 75%,
+    transparent
+  );
+}
+.popup.active::-webkit-scrollbar {
+  width: 10px;
+}
+
+.popup.active::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #083d77;
+  background-image: -webkit-linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.25) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.25) 50%,
+    rgba(255, 255, 255, 0.25) 75%,
+    transparent 75%,
+    transparent
+  );
+}
+
+.popup.active::-webkit-scrollbar-thumb {
+  border-radius: 12px 12px 12px 12px;
+  background-color: #f95738;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.25) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.25) 50%,
+    rgba(255, 255, 255, 0.25) 75%,
+    transparent 75%,
+    transparent
+  );
 }
 
 #spiderCanvas {
@@ -350,4 +417,48 @@ canvas {
   #whatsappIcon {
     border-radius: 0% 0% 20% 0%;
   }
+}
+
+.popup {
+  display: none; /* Скрываем попап по умолчанию */
+  position: fixed;
+  overflow: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  height: 80vh;
+  max-width: 95vw;
+  max-height: 95vh;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+.popup.active {
+  display: grid;
+  /* Показываем попап, если у него есть класс active */
+}
+.overlay {
+  display: none; /* Скрываем overlay по умолчанию */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+.overlay.active {
+  display: block; /* Показываем overlay, если у него есть класс active */
+}
+.imgpres {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.btnclspp {
+  gap: 20px;
+  display: flex;
+  justify-content: center;
 }
