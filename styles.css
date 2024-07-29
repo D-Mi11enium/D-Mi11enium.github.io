@@ -6,6 +6,7 @@ body {
   height: 100%;
   /* background: url(Desktop_main.png); */
   background-color: rgb(11, 2, 32);
+  color: #fff;
 }
 
 body::-webkit-scrollbar {
@@ -42,6 +43,7 @@ body::-webkit-scrollbar-thumb {
   );
 }
 .popup.active::-webkit-scrollbar {
+  display: none;
   width: 10px;
 }
 
@@ -211,6 +213,7 @@ canvas {
 .title2 {
   padding-top: 3%;
   padding-bottom: 1.5%;
+  z-index: 1;
 }
 .title2 h2 {
   font-family: "Comfortaa", sans-serif;
@@ -431,7 +434,7 @@ canvas {
   max-width: 95vw;
   max-height: 95vh;
   padding: 20px;
-  background: white;
+  background: transparent;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 1000;
 }
@@ -451,6 +454,7 @@ canvas {
 }
 .overlay.active {
   display: block; /* Показываем overlay, если у него есть класс active */
+  backdrop-filter: blur(4px);
 }
 .imgpres {
   display: flex;
@@ -459,6 +463,15 @@ canvas {
 }
 .btnclspp {
   gap: 20px;
+  padding-bottom: 40px;
   display: flex;
   justify-content: center;
+}
+h2,
+p {
+  padding-top: 20px;
+  padding-bottom: 16px;
+}
+.link {
+  text-decoration: none;
 }

@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="eyestule.css" />
     <link rel="stylesheet" href="stylenamed.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
@@ -120,7 +121,10 @@
         <h2>Вот его реализованные коммерческие проекты</h2>
       </div>
       <div class="portfolio">
-        <div class="portfolio-item border-animation trigger">
+        <div
+          class="portfolio-item border-animation trigger"
+          data-popup="popup1"
+        >
           <img src="Group 52.jpg" alt="Work 1" />
           <div class="description">
             <h3>Дизайн сайта салона оптики</h3>
@@ -130,48 +134,93 @@
             </p>
           </div>
         </div>
-        <div class="popup">
-          <div class="imgpres">
-            <img
-              src="Group 52.jpg"
-              alt="pres1"
-              style="width: inherit; max-width: 100%"
-            />
-            <h2>Дизайн сайта салона оптики</h2>
-            <img
-              src="image 1.png"
-              alt="pres2"
-              style="width: inherit; max-width: 100%"
-            />
-          </div>
+        <div div id="popup1" class="popup border-animation">
+          <div class="content">
+            <div class="imgpres">
+              <img
+                src="Group 52.jpg"
+                alt="pres1"
+                style="width: inherit; max-width: 100%"
+              />
+              <h2>Дизайн сайта салона оптики</h2>
+              <img
+                src="image 1.png"
+                alt="pres1"
+                style="width: inherit; max-width: 100%"
+              />
+            </div>
 
-          <p>
-            Минималистичный дизайн для салона-сагазина оптики, многостраничник.
-            Разрабатывался мной в Фигме. Реализован на WordPress, реализация
-            стороннего начинающего специалиста.
-          </p>
-          <div class="btnclspp">
-            <a
-              href="http://arts-optika.ru/"
-              target="_blank"
-              class="btn btn-primary"
-            >
-              А че там за сайт...
-            </a>
-            <button class="btn btn-dark close">Класс! Давай дальше</button>
+            <p>
+              Минималистичный дизайн для салона-сагазина оптики,
+              многостраничник. Разрабатывался мной в Фигме. Реализован на
+              WordPress, реализация стороннего начинающего специалиста.
+            </p>
+            <div class="btnclspp">
+              <a
+                href="http://arts-optika.ru/"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                Перейти на сайт
+              </a>
+              <button class="btn btn-dark close">Закрыть</button>
+            </div>
           </div>
         </div>
         <div class="overlay"></div>
-        <div class="portfolio-item border-animation">
+        <div
+          class="portfolio-item border-animation trigger"
+          data-popup="popup2"
+        >
           <img src="Group 53.jpg" alt="Work 2" />
           <div class="description">
             <h3>Дизайн сайта балингвального детского садика</h3>
             <p>
-              Многостраничник на платформе Тильда с большим количесвтом кастома
+              Многостраничник на платформе Тильда с большим количеством кастома
             </p>
           </div>
         </div>
-        <div class="portfolio-item border-animation">
+        <div id="popup2" class="popup border-animation">
+          <div class="content">
+            <div class="imgpres">
+              <img
+                src="Group 53.jpg"
+                alt="pres2"
+                style="width: inherit; max-width: 100%"
+              />
+              <h2>Дизайн сайта балингвального детского садика</h2>
+              <img
+                src="image 2.png"
+                alt="pres2"
+                style="width: inherit; max-width: 100%"
+              />
+            </div>
+
+            <p>
+              Многостраничник на платформе Тильда с большим количеством кастома
+            </p>
+            <div class="btnclspp">
+              <a
+                href="https://ktgenglishclub.com/"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                Перейти на сайт
+              </a>
+              <button class="btn btn-dark close">Закрыть</button>
+            </div>
+          </div>
+        </div>
+        <div class="peye">
+          <div class="eyes">
+            <div><i></i></div>
+            <div><i></i></div>
+          </div>
+        </div>
+        <div
+          class="portfolio-item border-animation trigger"
+          data-popup="popup3"
+        >
           <img src="Group 54.jpg" alt="Work 3" />
           <div class="description">
             <h3>Дизайн сайта дилера автобусов</h3>
@@ -181,7 +230,42 @@
             </p>
           </div>
         </div>
-        <div class="portfolio-item border-animation">
+        <div id="popup3" class="popup border-animation">
+          <div class="content">
+            <div class="imgpres">
+              <img
+                src="Group 54.jpg"
+                alt="pres3"
+                style="width: inherit; max-width: 100%"
+              />
+              <h2>Дизайн сайта дилера автобусов</h2>
+              <img
+                src="image 3.png"
+                alt="pres3"
+                style="width: inherit; max-width: 100%"
+              />
+            </div>
+
+            <p>
+              Дизайн сайта дилера автобусов, реализован как многостраничник на
+              Тильда
+            </p>
+            <div class="btnclspp">
+              <a
+                href="https://ztbus55.ru/"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                Перейти на сайт
+              </a>
+              <button class="btn btn-dark close">Закрыть</button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="portfolio-item border-animation trigger"
+          data-popup="popup4"
+        >
           <img src="Group 55.jpg" alt="Work 4" />
           <div class="description">
             <h3>Дизайн сайта по благоустройству дорог</h3>
@@ -191,7 +275,42 @@
             </p>
           </div>
         </div>
-        <div class="portfolio-item border-animation">
+        <div id="popup4" class="popup border-animation">
+          <div class="content">
+            <div class="imgpres">
+              <img
+                src="Group 55.jpg"
+                alt="pres4"
+                style="width: inherit; max-width: 100%"
+              />
+              <h2>Дизайн сайта по благоустройству дорог</h2>
+              <img
+                src="image 4.png"
+                alt="pres4"
+                style="width: inherit; max-width: 100%"
+              />
+            </div>
+
+            <p>
+              Дизайн сайта по благоустройству дорог, реализован как
+              многостраничник на Тильда
+            </p>
+            <div class="btnclspp">
+              <a
+                href="https://dk159.ru/"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                Перейти на сайт
+              </a>
+              <button class="btn btn-dark close">Закрыть</button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="portfolio-item border-animation trigger"
+          data-popup="popup5"
+        >
           <img src="Group 56.jpg" alt="Work 5" />
           <div class="description">
             <h3>Дизайн сайта массажного кабинета</h3>
@@ -201,19 +320,83 @@
             </p>
           </div>
         </div>
+        <div id="popup5" class="popup border-animation">
+          <div class="content">
+            <div class="imgpres">
+              <img
+                src="Group 56.jpg"
+                alt="pres5"
+                style="width: inherit; max-width: 100%"
+              />
+              <h2>Дизайн сайта массажного кабинета</h2>
+              <img
+                src="image 5.png"
+                alt="pres5"
+                style="width: inherit; max-width: 100%"
+              />
+            </div>
+
+            <p>
+              Дизайн сайта для массажного кабинета, реализован как
+              многостраничник на Тильда, один из первых проектов изначальный
+              дизайн все еще претерпевает изменения время от времени
+            </p>
+            <div class="btnclspp">
+              <a
+                href="https://calmellia.tilda.ws/"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                Перейти на сайт
+              </a>
+              <button class="btn btn-dark close">Закрыть</button>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="title2">
         <h2>А вот его учебные проекты</h2>
       </div>
       <div class="portfolio">
-        <div class="portfolio-item2">
+        <div class="portfolio-item2 trigger" data-popup="popup6">
           <img src="Frame 1.jpg" alt="study 0" />
           <div class="description">
             <h3>Дизайн главного экрана сайта</h3>
             <p>Стильный дизайн сайта AI инструмента</p>
           </div>
         </div>
-        <div class="portfolio-item2">
+        <div id="popup6" class="popup border-animation">
+          <div class="content">
+            <div class="imgpres">
+              <img
+                src="202407292022.gif"
+                alt="pres6"
+                style="width: inherit; max-width: 100%"
+              />
+              <h2>Дизайн главного экрана сайта</h2>
+              <!-- <img
+                src="image 5.png"
+                alt="pres5"
+                style="width: inherit; max-width: 100%"
+              /> -->
+            </div>
+
+            <p>
+              Стильный дизайн сайта AI инструмента, выполнен в рамках интенсива
+            </p>
+            <div class="btnclspp">
+              <a
+                href="https://www.figma.com/design/6QCqXTHf4FPGEuP14m53ZQ/1-%D0%A3%D0%A0%D0%9E%D0%9A?node-id=6-83&t=dfnmvzpRd0mHi8KA-1"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                Перейти к проекту
+              </a>
+              <button class="btn btn-dark close">Закрыть</button>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item2 trigger" data-popup="popup7">
           <img src="study1.jpg" alt="study 2" />
           <div class="description">
             <h3>Редизайн главной страницы сайта кинотеатра</h3>
@@ -223,25 +406,151 @@
             </p>
           </div>
         </div>
-        <div class="portfolio-item2">
+        <div id="popup7" class="popup border-animation">
+          <div class="content">
+            <div class="imgpres">
+              <img
+                src="study1.jpg"
+                alt="pres5"
+                style="width: inherit; max-width: 100%"
+              />
+              <h2>Редизайн главной страницы сайта кинотеатра</h2>
+              <img
+                src="Frame 16.png"
+                alt="pres5"
+                style="width: inherit; max-width: 100%"
+              />
+            </div>
+
+            <p>
+              Сайт был выбран случайным образм, результат редизайна превосходит
+              оригинал
+            </p>
+            <div class="btnclspp">
+              <a
+                href="https://www.figma.com/design/hZJskvu5jWsRR5BGlMRR5T/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD-%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B-%D0%B4%D0%BB%D1%8F-Behance-(Copy)?node-id=1601-5&t=Xkk7xipmDh5KAXg5-1"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                Перейти к проекту
+              </a>
+              <button class="btn btn-dark close">Закрыть</button>
+            </div>
+          </div>
+        </div>
+        <div class="peye">
+          <div class="cont">
+            <div class="box">
+              <div class="box-inner"></div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item2 trigger" data-popup="popup8">
           <img src="study2.jpg" alt="study 3" />
           <div class="description">
             <h3>Макет сайта с курса</h3>
             <p>Учебные макеты с адаптивом</p>
           </div>
         </div>
-        <div class="portfolio-item2">
+        <div id="popup8" class="popup border-animation">
+          <div class="content">
+            <div class="imgpres">
+              <img
+                src="study2.jpg"
+                alt="pres5"
+                style="width: inherit; max-width: 100%"
+              />
+              <h2>Макет сайта с курса</h2>
+              <img
+                src="Desktop2.jpg"
+                alt="pres5"
+                style="width: inherit; max-width: 100%"
+              />
+            </div>
+
+            <p>Учебные макеты с адаптивом</p>
+            <div class="btnclspp">
+              <a
+                href="https://www.figma.com/design/XAOGqY44SOfCJIIFk5d2h5/SoilSeller?node-id=0-1&t=isuKVg1do158VfLU-1"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                Перейти к проекту
+              </a>
+              <button class="btn btn-dark close">Закрыть</button>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item2 trigger" data-popup="popup9">
           <img src="study3.jpg" alt="study 4" />
           <div class="description">
             <h3>Макет главной страницы, практика редизайна</h3>
             <p>Редизайн предложенной страницы по предложенным референсам</p>
           </div>
         </div>
-        <div class="portfolio-item2">
+        <div id="popup9" class="popup border-animation">
+          <div class="content">
+            <div class="imgpres">
+              <img
+                src="study3.jpg"
+                alt="pres5"
+                style="width: inherit; max-width: 100%"
+              />
+              <h2>Макет главной страницы, практика редизайна</h2>
+              <img
+                src="desk.jpg"
+                alt="pres5"
+                style="width: inherit; max-width: 100%"
+              />
+            </div>
+
+            <p>Редизайн предложенной страницы по предложенным референсам</p>
+            <div class="btnclspp">
+              <a
+                href="https://www.figma.com/design/MlJWqr4bU5zE7Zcq2dr852/%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9-%D0%91%D0%B5%D0%BB%D1%8C%D0%B4%D1%8E%D0%B3%D0%BE%D0%B2%3A-%D0%A1%D0%B0%D0%BC%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-(Copy)?node-id=8218-11875&t=f5SoiXLa8lEiOI12-1"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                Перейти к проекту
+              </a>
+              <button class="btn btn-dark close">Закрыть</button>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item2 trigger" data-popup="popup10">
           <img src="study4.jpg" alt="study 5" />
           <div class="description">
             <h3>Макет лендоса курса по крипте</h3>
             <p>Дизайн лендинга, один из проектов с марафонов</p>
+          </div>
+        </div>
+        <div id="popup10" class="popup border-animation">
+          <div class="content">
+            <div class="imgpres">
+              <img
+                src="study4.jpg"
+                alt="pres5"
+                style="width: inherit; max-width: 100%"
+              />
+              <h2>Макет лендоса курса по крипте</h2>
+              <img
+                src="des.jpg"
+                alt="pres5"
+                style="width: inherit; max-width: 100%"
+              />
+            </div>
+
+            <p>Дизайн лендинга, один из проектов с марафонов</p>
+            <div class="btnclspp">
+              <a
+                href="https://www.figma.com/design/jgs70IJtXmxpv0SjxhtHOd/%D0%9C%D0%B0%D1%80%D0%B0%D1%84%D0%BE%D0%BD-Study-Kvo-%7C-%D0%92%D0%B5%D0%B1-%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD-31-%7C-%D0%9A%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D0%B2%D0%B0%D0%BB%D1%8E%D1%82%D0%B0-(Copy)?node-id=0-1&t=bvSDh8ua3UCRGgzk-1"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                Перейти к проекту
+              </a>
+              <button class="btn btn-dark close">Закрыть</button>
+            </div>
           </div>
         </div>
       </div>
@@ -249,17 +558,51 @@
         <h2>А тут в составе большой команды участвует в PET-проекте</h2>
       </div>
       <div class="portfolio">
-        <div class="portfolio-item3">
-          <img src="Frame 556.jpg" alt="Pet 1" />
-          <div class="description">
-            <h3>Дизайн для проекта помощи приютам для животных</h3>
-            <p>
-              Большой WEB-проект, на стадии MVP, с последующей реализацией на
-              iOS и Android
-            </p>
+        <a class="link" href="https://lapkipomoshi.ru/">
+          <div class="portfolio-item3">
+            <img src="Frame 556.jpg" alt="Pet 1" />
+            <div class="description">
+              <h3>Дизайн для проекта помощи приютам для животных</h3>
+              <p>
+                Большой WEB-проект, на стадии MVP, с последующей реализацией на
+                iOS и Android
+              </p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
+    <script>
+      document.addEventListener("mousemove", (e) => {
+        const eyesContainer = document.querySelector(".eyes");
+        const eyes = document.querySelectorAll(".eyes > div");
+
+        if (!eyesContainer || eyes.length !== 2) return;
+
+        const containerRect = eyesContainer.getBoundingClientRect();
+        const containerCenterX = containerRect.left + containerRect.width / 2;
+        const containerCenterY = containerRect.top + containerRect.height / 2;
+
+        const angle = Math.atan2(
+          e.clientY - containerCenterY,
+          e.clientX - containerCenterX
+        );
+        const distance = Math.min(
+          eyes[0].offsetWidth / 4,
+          Math.sqrt(
+            Math.pow(e.clientX - containerCenterX, 2) +
+              Math.pow(e.clientY - containerCenterY, 2)
+          )
+        );
+
+        const moveX = Math.cos(angle) * distance;
+        const moveY = Math.sin(angle) * distance;
+
+        eyes.forEach((eye) => {
+          const eyeBall = eye.querySelector("i");
+          eyeBall.style.transform = `translate(${moveX}px, ${moveY}px)`;
+        });
+      });
+    </script>
   </body>
 </html>

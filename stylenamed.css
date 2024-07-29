@@ -34,6 +34,13 @@
   z-index: 2;
 }
 
+@media (max-width: 980px) {
+  .glitch_a,
+  .glitch_b {
+    font-family: "Comfortaa";
+  }
+}
+
 @keyframes noise-anim {
   0% {
     clip: rect(59px, 9999px, 10px, 0);
