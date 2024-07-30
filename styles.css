@@ -229,11 +229,20 @@ canvas {
   gap: 20px;
   padding-top: 1.5%;
 }
+.port {
+  display: grid;
+  /* background: transparent; */
+  font-family: "Comfortaa", sans-serif;
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+  gap: 20px;
+  border-radius: 12px;
+  /* overflow: auto; */
+  /* padding-top: 1.5%; */
+}
 
 .portfolio-item {
   /* border: 2px solid #ccc; */
-  /* border-radius: 12px; */
-
+  border-radius: 12px;
   overflow: auto;
   transition: transform 0.3s ease;
   backdrop-filter: blur(4px);
@@ -335,16 +344,61 @@ canvas {
 .portfolio-item3 {
   display: flex;
   flex-direction: row-reverse;
-  align-items: center;
+  align-items: stretch;
   border: 2px solid #ccc;
   border-radius: 12px;
-  overflow: auto;
+  /* overflow: auto; */
   transition: transform 0.3s ease;
   backdrop-filter: blur(4px);
+  position: relative;
+  height: 100%;
 }
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.portfolio-item3::after,
+.portfolio-item3::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(
+    from var(--angle),
+    /* transparent 5%, */ rgba(219, 231, 49, 0.5),
+    rgba(116, 231, 49, 0.5),
+    rgba(231, 189, 49, 0.5)
+  );
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 4px;
+  border-radius: 12px;
+  filter: blur(1.5rem);
+  animation: 3s spin linear infinite;
+}
+
+.portfolio-item3::before {
+  filter: blur(11.5rem);
+  border-radius: 12px;
+  opacity: 0.5;
+}
+
+/* @keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+} */
 
 .portfolio-item3 img {
   width: 50%;
+  border-radius: 0px 12px 12px 0px;
   height: auto;
 }
 
@@ -356,6 +410,12 @@ canvas {
   width: 50%;
   padding: 15px;
   text-align: left;
+  border-radius: 12px 0px 0px 12px;
+  background: rgba(11, 2, 32, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
 .portfolio-item3 .description h3 {
@@ -466,6 +526,10 @@ canvas {
   padding-bottom: 40px;
   display: flex;
   justify-content: center;
+  text-transform: uppercase;
+}
+.close {
+  text-transform: uppercase;
 }
 h2,
 p {
@@ -474,4 +538,69 @@ p {
 }
 .link {
   text-decoration: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.rainbow-button {
+  width: calc(16vw + 6px);
+  height: calc(4vw + 6px);
+  background-image: linear-gradient(
+    90deg,
+    #00c0ff 0%,
+    #ffcf00 49%,
+    #fc4f4f 80%,
+    #00c0ff 100%
+  );
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 1vw;
+  font-weight: bold;
+}
+.rainbow-button:after {
+  content: attr(alt);
+  width: 16vw;
+  height: 4vw;
+  background-color: #191919;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rainbow-button:hover {
+  animation: slidebg 2s linear infinite;
+}
+@keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
+}
+.btncont {
+  padding: 1em 2em;
+  background-color: #080514;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 4px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btncont::after {
+  content: "";
+  position: absolute;
+  height: 107%;
+  width: 102%;
+  border-radius: 4px;
+  background-image: linear-gradient(to bottom right, #4423b9, #b61f89);
+  z-index: -1;
+}
+.btncont:hover {
+  z-index: 0;
+  color: #fff;
+  box-shadow: 40px 0 100px #4323b96b, -40px 0 100px #b61f8977;
 }
