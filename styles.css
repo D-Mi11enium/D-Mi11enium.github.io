@@ -237,7 +237,7 @@ canvas {
 
 .portfolio-item {
   /* border: 2px solid #ccc; */
-  border-radius: 12px;
+  /* border-radius: 12px; */
   overflow: auto;
   transition: transform 0.3s ease;
   backdrop-filter: blur(4px);
