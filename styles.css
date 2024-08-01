@@ -109,13 +109,6 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 10px;
 }
 
-@media (max-width: 1140px) {
-  #instagramIcon {
-    background-color: rgba(231, 229, 231, 0.5);
-    /* top: 630px; */
-  }
-}
-
 #telegramIcon {
   left: 0px;
   top: 350px;
@@ -123,13 +116,6 @@ body::-webkit-scrollbar-thumb {
   border-radius: 0% 30% 0% 0%;
   padding: 20px 20px 20px 20px;
   margin-bottom: 10px;
-}
-
-@media (max-width: 1140px) {
-  #telegramIcon {
-    background-color: rgba(231, 229, 231, 0.5);
-    /* top: 560px; */
-  }
 }
 
 #whatsappIcon {
@@ -142,9 +128,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 1140px) {
+  #instagramIcon,
+  #telegramIcon,
   #whatsappIcon {
-    background-color: rgba(231, 229, 231, 0.5);
-    /* top: 700px; */
+    background-color: rgb(204, 191, 226);
+    padding-top: 8px;
+    padding-bottom: 16px;
   }
 }
 
@@ -222,12 +211,18 @@ canvas {
   color: #fff;
 }
 .portfolio {
-  display: grid;
+  display: flex;
   background: transparent;
   font-family: "Comfortaa", sans-serif;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* -ms-grid-column-align: repeat(auto-fit, minmax(300px, 1fr)); */
   gap: 20px;
   padding-top: 1.5%;
+}
+@media (max-width: 980px) {
+  .portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 }
 .port {
   display: grid;
@@ -304,6 +299,7 @@ canvas {
 }
 
 .portfolio-item2 {
+  width: -webkit-fill-available;
   border: 2px solid #ccc;
   border-radius: 12px;
   overflow: auto;
@@ -465,6 +461,11 @@ canvas {
   .s_icons {
     display: flex;
     justify-content: center;
+    position: fixed;
+    top: auto;
+    left: 25%;
+    z-index: 2;
+    gap: 4px;
   }
   .social-icon {
     position: static;
