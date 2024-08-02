@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
+  padding-top: 5%;
   padding-bottom: 3%;
 }
 
