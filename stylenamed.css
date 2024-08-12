@@ -19,18 +19,32 @@
     padding-bottom: 10%;
   }
 }
-.glitch_a,
-.glitch_b {
+.glitch_a {
   color: rgb(255, 255, 255);
-  font-size: clamp(16px, 5vw + 1rem, 100px);
+  font-size: clamp(20px, 5vw + 2rem, 120px);
   position: relative;
   width: 100%;
   word-wrap: break-word;
   overflow-wrap: break-word;
   margin: 0 auto;
-  font-family: "Rubik Moonrocks", sans-serif;
-  text-align: center;
+  font-family: "Comfortaa", sans-serif;
+  text-align: left;
   margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+}
+
+.glitch_b {
+  color: rgb(255, 255, 255);
+  font-size: clamp(12px, 3vw + 0.5rem, 50px);
+  position: relative;
+  width: 50vw;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  /* margin: 0 auto; */
+  font-family: "Comfortaa", sans-serif;
+  text-align: left;
+  /* margin-left: auto; */
   margin-right: auto;
   z-index: 2;
 }
@@ -39,6 +53,8 @@
   .glitch_a,
   .glitch_b {
     font-family: "Comfortaa";
+    text-align: center;
+    width: 100%;
   }
 }
 
@@ -121,7 +137,7 @@
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
   animation: noise-anim 2s infinite linear alternate-reverse;
-  text-align: center;
+  text-align: left;
 }
 
 @keyframes noise-anim-2 {
@@ -203,5 +219,15 @@
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
   animation: noise-anim-2 3s infinite linear alternate-reverse;
-  text-align: center;
+  text-align: left;
+}
+@media (max-width: 980px) {
+  .glitch_a:after,
+  .glitch_b:after,
+  .glitch_a:before,
+  .glitch_b:before {
+    font-family: "Comfortaa";
+    text-align: center;
+    width: 100%;
+  }
 }

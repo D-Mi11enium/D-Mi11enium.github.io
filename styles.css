@@ -173,6 +173,29 @@ body::-webkit-scrollbar-thumb {
   filter: brightness(2.5);
   transform: scale(1.5);
 }
+.hero {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+}
+
+@media (max-width: 980px) {
+  .hero {
+    flex-direction: column;
+    /* align-items: flex-end; */
+  }
+}
+.mainfoto img {
+  position: relative;
+  filter: opacity(0.5) drop-shadow(0px 0px 16px #4d0dc6);
+  box-shadow: 0 0 25px #4d0dc6;
+}
+@media (max-width: 980px) {
+  .mainfoto img {
+    width: 100%;
+  }
+}
 .blocks {
   display: flex;
   flex-direction: column;
@@ -202,7 +225,7 @@ canvas {
 }
 .title1 h2 {
   font-family: "Comfortaa", sans-serif;
-  text-align: center;
+  text-align: left;
   font-size: 2.5rem;
   color: #fff;
 }
@@ -214,7 +237,7 @@ canvas {
 }
 .title2 h2 {
   font-family: "Comfortaa", sans-serif;
-  text-align: center;
+  text-align: left;
   font-size: 2.5rem;
   color: #fff;
 }
@@ -440,7 +463,7 @@ canvas {
 @media (max-width: 980px) {
   .title1 h2,
   .title2 h2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
   .portfolio-item .description h3,
   .portfolio-item2 .description h3,
@@ -615,7 +638,7 @@ a {
 }
 .button_main {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   padding-bottom: 120px;
 }
 .button {
@@ -633,7 +656,16 @@ a {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
-
+@media (max-width: 980px) {
+  .button_main {
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  .button {
+    background: #ffffff;
+    border: 3px solid #fff;
+  }
+}
 .star-1 {
   position: absolute;
   top: 20%;
@@ -768,4 +800,20 @@ a {
 
 .fil0 {
   fill: #fffdef;
+}
+
+@media (max-width: 980px) {
+  .btn,
+  .btnclspp {
+    font-size: 0.5rem;
+  }
+  .rainbow-button {
+    font-size: 0.5rem;
+    width: calc(28vw + 6px);
+    height: calc(6vw + 6px);
+  }
+  .rainbow-button:after {
+    width: 28vw;
+    height: 6vw;
+  }
 }
