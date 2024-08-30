@@ -192,6 +192,10 @@ body::-webkit-scrollbar-thumb {
   box-shadow: 0 0 25px #4d0dc6;
 }
 @media (max-width: 980px) {
+  .mainfoto {
+    height: 300px;
+    overflow: hidden;
+  }
   .mainfoto img {
     width: 100%;
   }
@@ -660,6 +664,7 @@ a {
   .button_main {
     justify-content: center;
     padding-bottom: 20px;
+    padding-top: 5%;
   }
   .button {
     background: #ffffff;
