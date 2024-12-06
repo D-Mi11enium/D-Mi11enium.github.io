@@ -50,6 +50,17 @@ body::-webkit-scrollbar-thumb {
     transparent
   );
 }
+
+.header {
+  display: flex;
+}
+.logo {
+  position: relative;
+  left: 80px;
+  top: 20px;
+  width: 150px;
+}
+
 .popup.active::-webkit-scrollbar {
   display: none;
   width: 10px;
