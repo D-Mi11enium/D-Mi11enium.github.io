@@ -53,14 +53,39 @@ body::-webkit-scrollbar-thumb {
 
 .header {
   display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  height: 100px;
 }
 .logo {
   position: relative;
-  left: 80px;
-  top: 20px;
+  left: 0px;
+  top: 0px;
   width: 150px;
 }
+.logolink {
+  padding-left: 160px;
+  /* padding-top: 20px; */
+}
 
+@media (max-width: 980px) {
+  .header {
+    display: flex;
+    height: 50px;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .logo {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 70px;
+  }
+  .logolink {
+    padding-left: 20px;
+    /* padding-top: 20px; */
+  }
+}
 .popup.active::-webkit-scrollbar {
   display: none;
   width: 10px;
@@ -184,28 +209,137 @@ body::-webkit-scrollbar-thumb {
   filter: brightness(2.5);
   transform: scale(1.5);
 }
+.rree {
+  position: relative;
+  align-self: center;
+  padding: 0px;
+  margin: 0px;
+  left: 200px;
+}
+@media (max-width: 980px) {
+  .rree {
+    position: relative;
+    align-self: center;
+    padding: 0px;
+    margin: 0px;
+    left: 50px;
+  }
+}
 .hero {
   display: flex;
   flex-direction: row;
-
-  align-items: center;
+  /* align-items: center; */
 }
 
 @media (max-width: 980px) {
   .hero {
+    padding-left: 10px;
+    padding-right: 10px;
     flex-direction: column;
     /* align-items: flex-end; */
   }
 }
+.maintext {
+  width: 70vw;
+  height: 100%;
+  /* position:relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+
+@media (max-width: 980px) {
+  .maintext {
+    width: 92vw;
+    justify-content: start;
+    padding-top: 0%;
+    padding-bottom: 2%;
+  }
+}
+
+.mainfoto {
+  position: relative;
+  /* width: 40vw; */
+  height: 100%;
+  /* backdrop-filter: blur(8px); */
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+.dopbox {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+/* Общие стили для слоёв */
+.layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+@keyframes glow {
+  0% {
+    filter: opacity(1) drop-shadow(0px 0px 16px #8b0000); /* Тёмно-красный */
+  }
+  50% {
+    filter: opacity(1) drop-shadow(0px 0px 32px #006400); /* Тёмно-зелёный */
+  }
+  75% {
+    filter: opacity(1) drop-shadow(0px 0px 24px #00008b); /* Тёмно-синий */
+  }
+  100% {
+    filter: opacity(1) drop-shadow(0px 0px 16px #8b0000); /* Тёмно-красный */
+  }
+}
+/* Индивидуальные стили для слоёв */
+.layer1 {
+  z-index: 1;
+  /* filter: opacity(1) drop-shadow(0px 0px 16px #4d0dc6); */
+  /* transition: filter 0.5s ease-in-out; */
+  animation: glow 3s infinite ease-in-out;
+}
+.layer1:hover {
+  /* filter: opacity(1) drop-shadow(0px 0px 32px #ff5733); */
+}
+.layer2 {
+  z-index: 2;
+  filter: opacity(0.5) drop-shadow(0px 0px 16px #4d0dc6);
+}
+.parallelogram {
+  width: 467px;
+  height: 763px;
+  background: #c5e928;
+  transform: skewX(-13deg);
+  position: absolute;
+  bottom: 0;
+  left: 89px;
+}
+
 .mainfoto img {
   position: relative;
-  filter: opacity(0.5) drop-shadow(0px 0px 16px #4d0dc6);
-  box-shadow: 0 0 25px #4d0dc6;
+  /* box-shadow: 0 0 25px #4d0dc6; */
 }
 @media (max-width: 980px) {
-  .mainfoto {
-    height: 300px;
+  .parallelogram {
+    width: 315px;
     overflow: hidden;
+    height: 354px;
+    background: #c5e928;
+    transform: skewX(-6deg);
+    position: absolute;
+    bottom: 165px;
+    left: 17px;
+  }
+  .mainfoto {
+    height: 420px;
+    overflow: visible;
+  }
+  .dopbox {
+    width: 100%;
   }
   .mainfoto img {
     width: 100%;
@@ -215,6 +349,8 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   flex-direction: column;
   padding: 80px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 canvas {
   position: fixed;
@@ -229,6 +365,8 @@ canvas {
   .blocks {
     padding: 10px;
     padding-bottom: 60px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .portfolio {
     padding-left: 10px;
@@ -508,7 +646,7 @@ canvas {
     display: flex;
     justify-content: center;
     position: fixed;
-    top: auto;
+    bottom: 0px;
     left: 25%;
     z-index: 2;
     gap: 4px;
@@ -517,7 +655,7 @@ canvas {
     position: static;
   }
   #instagramIcon {
-    border-radius: 0% 0% 0% 20%;
+    border-radius: 20% 0% 0% 0%;
   }
 
   #telegramIcon {
@@ -525,7 +663,7 @@ canvas {
   }
 
   #whatsappIcon {
-    border-radius: 0% 0% 20% 0%;
+    border-radius: 0% 20% 0% 0%;
   }
 }
 
